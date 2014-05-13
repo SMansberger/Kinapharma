@@ -33,6 +33,12 @@ html, body {
 	padding: 10px;
 }
 
+.orbit-container {
+	position:absolute;
+	top: -30px;
+	z-index:-1;
+}
+
 *,
 *:before,
 *:after {
