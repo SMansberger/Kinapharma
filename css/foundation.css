@@ -39,6 +39,20 @@ html, body {
 	z-index:-1;
 }
 
+.leftfooter {
+	text-align:center;
+}
+
+.centerfooter {
+	text-align:center;
+	border-style:none solid none solid;
+	border-width: 1px;
+}
+
+.rightfooter {
+	text-align:center;
+}
+
 *,
 *:before,
 *:after {
