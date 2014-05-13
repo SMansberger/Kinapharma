@@ -53,6 +53,10 @@ html, body {
 	text-align:center;
 }
 
+.lowerSlides {
+	top:50px;
+}
+
 *,
 *:before,
 *:after {

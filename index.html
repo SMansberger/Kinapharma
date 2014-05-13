@@ -1,98 +1,111 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <script src="js/vendor/modernizr.js"></script>
-  </head>
-  <body>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Foundation | Welcome</title>
+<link rel="stylesheet" href="css/foundation.css" />
+<script src="js/vendor/modernizr.js"></script>
+<script type="text/javascript" 
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js">
+</script>
+<script type="text/javascript" src="js/jquery.simplyscroll.js"></script>
+<link rel="stylesheet" href="css/jquery.simplyscroll.css" media="all" 
+type="text/css">
+
+<script type="text/javascript">
+(function($) {
+	$(function() { //on DOM ready 
+    		$("#scroller").simplyScroll();
+	});
+ })(jQuery);
+</script>
+</head>
+<body>
+<div class="row">
+  <div class="small-3 large-3 columns logo"> <img src="img/logoText.png" alt="logo" width="263" height="100"> </div>
+</div>
+<div class="row">
+  <div class="small-11 columns">
+    <ul class="button-group radius right nav">
+      <li><a href="#" class="button" data-dropdown="hover1" data-options="is_hover:true">Button 1</a></li>
+      <li><a href="#" class="button" data-dropdown="hover2" data-options="is_hover:true">Button 2</a></li>
+      <li><a href="#" class="button" data-dropdown="hover3" data-options="is_hover:true">Button 3</a></li>
+      <li><a href="#" class="button" data-dropdown="hover4" data-options="is_hover:true">Button 4</a></li>
+    </ul>
     
-    <div class="row">
-      <div class="small-3 large-3 columns logo">
-        <img src="img/logoText.png" alt="logo" width="263" height="100">
-      </div>
-    </div>
-    
-    <div class="row">
-    	<div class="small-11 columns">
-        	<ul class="button-group radius right nav">
-              <li><a href="#" class="button" data-dropdown="hover1" data-options="is_hover:true">Button 1</a></li>
-              <li><a href="#" class="button" data-dropdown="hover2" data-options="is_hover:true">Button 2</a></li>
-              <li><a href="#" class="button" data-dropdown="hover3" data-options="is_hover:true">Button 3</a></li>
-              <li><a href="#" class="button" data-dropdown="hover4" data-options="is_hover:true">Button 4</a></li>
-            </ul>
-            
-        	<!--Button Menu Options-->
-            <ul id="hover1" class="f-dropdown" data-dropdown-content>
-              <li><a href="#">This is a link</a></li>
-              <li><a href="#">This is another</a></li>
-              <li><a href="#">Yet another</a></li>
-            </ul>
-            <ul id="hover2" class="f-dropdown" data-dropdown-content>
-              <li><a href="#">This is a link</a></li>
-              <li><a href="#">This is another</a></li>
-              <li><a href="#">Yet another</a></li>
-            </ul>
-            <ul id="hover3" class="f-dropdown" data-dropdown-content>
-              <li><a href="#">This is a link</a></li>
-              <li><a href="#">This is another</a></li>
-              <li><a href="#">Yet another</a></li>
-            </ul>
-            <ul id="hover4" class="f-dropdown" data-dropdown-content>
-              <li><a href="#">This is a link</a></li>
-              <li><a href="#">This is another</a></li>
-              <li><a href="#">Yet another</a></li>
-            </ul>
-        </div>
-    </div>
-    
-    <!--Start Orbit-->
-    <div class="row">
-      <div class="large-12 columns">
-        <ul class="example-orbit slides" data-orbit>
-          <li>
-            <img src="img/slide1.gif" alt="slide 1" />
-          </li>
-          <li>
-            <img src="img/slide2.gif" alt="slide 2" />
-          </li>
-          <li>
-            <img src="img/slide3.gif" alt="slide 3" />
-          </li>
-        </ul>
-      </div>
-    </div>
+    <!--Button Menu Options-->
+    <ul id="hover1" class="f-dropdown" data-dropdown-content>
+      <li><a href="#">This is a link</a></li>
+      <li><a href="#">This is another</a></li>
+      <li><a href="#">Yet another</a></li>
+    </ul>
+    <ul id="hover2" class="f-dropdown" data-dropdown-content>
+      <li><a href="#">This is a link</a></li>
+      <li><a href="#">This is another</a></li>
+      <li><a href="#">Yet another</a></li>
+    </ul>
+    <ul id="hover3" class="f-dropdown" data-dropdown-content>
+      <li><a href="#">This is a link</a></li>
+      <li><a href="#">This is another</a></li>
+      <li><a href="#">Yet another</a></li>
+    </ul>
+    <ul id="hover4" class="f-dropdown" data-dropdown-content>
+      <li><a href="#">This is a link</a></li>
+      <li><a href="#">This is another</a></li>
+      <li><a href="#">Yet another</a></li>
+    </ul>
+  </div>
+</div>
+
+<!--Start Orbit-->
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="example-orbit slides" data-orbit data-options="
+    	animation:slide; 
+        timer_speed:5000; 
+        pause_on_hover:true;
+  		animation_speed: 500;
+  		navigation_arrows: false;
+  		slide_number: true;
+      	bullets: true;
+      	timer: true;
+      	next_on_click: false;
+      	variable_height: false;">
+      <li> <img src="img/slide1.gif" alt="slide 1" /> </li>
+      <li> <img src="img/slide2.gif" alt="slide 2" /> </li>
+      <li> <img src="img/slide3.gif" alt="slide 3" /> </li>
+    </ul>
+  </div>
+</div>
 <!--End Orbit-->
 
+<div class="row">
+  <div class="large-12 medium-12 columns footer">
     <div class="row">
-      <div class="large-12 medium-12 columns footer">
-      	<div class="row">
-        	<div class="small-4 columns leftfooter">
-            	Contact us at:<br/><a href="mailto:info@kinapharma.com?Subject=Info%20request" target="_top">info@kinapharma.com</a><br/>+1 (555) 555-5555<br/>
-            </div>
-            <div class="small-4 columns centerfooter">
-            	&copy; 2014 Kinapharma
-            </div>
-            <div class="small-4 columns rightfooter">
-            	
-                <a title="Kinapharma Facebook Page" href="#"><img src="img/facebook.png" alt="facebook-icon" height="32" width="32"></a>
-                <a title="Day One Twitter" href="#"><img src="img/twitter.png" alt="twitter=icon" height="32" width="32"></a>
-                <a title="Day One YouTube Channel" href="#"><img src="img/youtube.png" alt="youtube-icon" height="32" width="32"></a>
-                <a title="Day One Instagram" href="#"><img src="img/instagram.png" alt="instagram-icon" height="32" width="32"></a>
-            </div>
-      	</div>  
-      </div>   
-
-      <div class="large-4 medium-4 columns">
-			
+      <div class="small-4 columns leftfooter"> Contact us at:<br/>
+        <a href="mailto:info@kinapharma.com?Subject=Info%20request" target="_top">info@kinapharma.com</a><br/>
+        +1 (555) 555-5555<br/>
       </div>
+      <div class="small-4 columns centerfooter"> &copy; 2014 Kinapharma </div>
+      <div class="small-4 columns rightfooter"> <a title="Kinapharma Facebook Page" href="#"><img src="img/facebook.png" alt="facebook-icon" height="32" width="32"></a> <a title="Day One Twitter" href="#"><img src="img/twitter.png" alt="twitter=icon" height="32" width="32"></a> <a title="Day One YouTube Channel" href="#"><img src="img/youtube.png" alt="youtube-icon" height="32" width="32"></a> <a title="Day One Instagram" href="#"><img src="img/instagram.png" alt="instagram-icon" height="32" width="32"></a> </div>
     </div>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
+  </div>
+</div>
+
+<div class="row">
+	<div class="large-12 columns lowerSlides">
+        <ul id="scroller">
+            <li><img src="img/rotate1.gif" width="290" height="200"></li>
+            <li><img src="img/rotate2.gif" width="290" height="200"></li>
+            <li><img src="img/rotate3.gif" width="290" height="200"></li>
+        </ul> 
+  </div>
+</div>           
+    <script src="js/vendor/jquery.js"></script> 
+<script src="js/foundation.min.js"></script> 
+<script>
       $(document).foundation();
     </script>
-  </body>
+</body>
 </html>
