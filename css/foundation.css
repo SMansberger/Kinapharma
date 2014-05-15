@@ -1660,7 +1660,7 @@ button, .button {
   padding-left: 2rem;
   font-size: 1rem;
   /*     @else                            { font-size: $padding - rem-calc(2); } */
-  background-color: #008cba;
+  background-color: #022c66;
   border-color: #007095;
   color: white;
   -webkit-transition: background-color 300ms ease-out;
